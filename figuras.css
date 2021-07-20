@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Serif&display=swap');
+
+:root {
+  --principal: #F2DBD8;
+  --fondo: #FFFFFF;
+  --resaltar: #59569D;
+  --baseOscuro: #433A3F;
+}
+
+::selection {
+  background-color: var(--principal)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Serif', serif;
+  color: var(--baseOscuro);
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+h1, h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+main {
+  display: grid;
+  grid-gap: 25px;
+  padding: 40px;
+}
+
+section {
+  padding: 30px;
+  background-color: var(--fondo);
+  border-radius: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p, label, input {
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 3px solid var(--principal);
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--resaltar);
+  background-color: var(--principal);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--principal);
+}
+
+.resultado {
+  margin-top: 15px;
+  background-color: var(--principal);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--fondo);
+  padding: 15px;
+}

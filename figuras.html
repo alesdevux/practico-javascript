@@ -23,15 +23,15 @@
       </label>
       <input type="number" id="ladoCuadrado" name="ladoCuadrado" value="5" min="1">
 
-      <button type="button" 
-        onclick="calcularPerimetroCuadrado()"
-        data-message="Calcular perímetro de cuadrado">
-        Calcular perímetro
-      </button>
-      <button type="button" onclick="calcularAreaCuadrado()">
-        Calcular área
-      </button>
-      <p id="resultadoCuadrado" class="resultado"></p>
+      <div class="buttons">
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular área
+        </button>
+      </div>
+      <p id="resultadoCuadrado" class="resultado">Selecciona un calculo para ver el resultado</p>
     </form>
   </section>
 
@@ -59,13 +59,15 @@
       </label>
       <input type="number" id="alturaTriangulo" name="alturaTriangulo" value="5" min="1">
 
-      <button type="button" onclick="calcularPerimetroTriangulo()">
-        Calcular perímetro
-      </button>
-      <button type="button" onclick="calcularAreaTriangulo()">
-        Calcular área
-      </button>
-      <p id="resultadoTriangulo" class="resultado"></p>
+      <div class="buttons">
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Calcular área
+        </button>
+      </div>
+      <p id="resultadoTriangulo" class="resultado">Selecciona un calculo para ver el resultado</p>
     </form>
   </section>
 
@@ -77,18 +79,21 @@
       </label>
       <input type="number" id="radioCirculo" name="radioCirculo" value="5" min="1">
 
-      <button type="button" onclick="calcularPerimetroCirculo()">
-        Calcular perímetro
-      </button>
-      <button type="button" onclick="calcularAreaCirculo()">
-        Calcular área
-      </button>
-      <p id="resultadoCirculo" class="resultado"></p>
+      <div class="buttons">
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+          Calcular área
+        </button>
+      </div>
+      <p id="resultadoCirculo" class="resultado">Selecciona un calculo para ver el resultado</p>
     </form>
   </section>
 </main>
 
 <footer>
+  <p>Práctica hecha con 💚 por @alesweb 🦄</p>
 </footer>
 
 <script src="figuras.js"></script>
