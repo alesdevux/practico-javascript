@@ -62,12 +62,14 @@ function calcularAreaTriangulo() {
 function calcularPerimetroCirculo() {
   const radio = document.getElementById('radioCirculo').value;
   const perimetro = perimetroCirculo(radio);
-  const mensaje = 'El perímetro del círculo es de ' + perimetro + 'cm';
+  const perimetroFixed = perimetro.toFixed(2);
+  const mensaje = 'El perímetro del círculo es de ' + perimetroFixed + 'cm';
   document.getElementById('resultadoCirculo').innerHTML = mensaje;
 }
 function calcularAreaCirculo() {
   const radio = document.getElementById('radioCirculo').value;
   const area = areaCirculo(radio);
-  const mensaje = 'El área del círculo es de ' + area + 'cm²';
+  const areaFixed = area.toFixed(2);
+  const mensaje = 'El área del círculo es de ' + areaFixed + 'cm²';
   document.getElementById('resultadoCirculo').innerHTML = mensaje;
 }

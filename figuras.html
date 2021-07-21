@@ -39,25 +39,36 @@
     <h2 tabindex="0">Triángulo</h2>
     <form>
       <p tabindex="0">Escribe cuanto miden las siguientes partes de tu triángulo para poder hacer el cálculo</p>
-      <label for="ladoTriangulo1">
-        Lado izquierdo
-      </label>
-      <input type="number" id="ladoTriangulo1" name="ladoTriangulo1" value="5">
 
-      <label for="ladoTriangulo2">
-        Lado derecho
-      </label>
-      <input type="number" id="ladoTriangulo2" name="ladoTriangulo2" value="5">
+      <div class="divideInputs">
+        <div>
+          <label for="ladoTriangulo1">
+            Lado izquierdo
+          </label>
+          <input type="number" id="ladoTriangulo1" name="ladoTriangulo1" value="5">
+        </div>
 
-      <label for="baseTriangulo">
-        Base
-      </label>
-      <input type="number" id="baseTriangulo" name="baseTriangulo" value="5" min="1">
+        <div>
+          <label for="ladoTriangulo2">
+            Lado derecho
+          </label>
+          <input type="number" id="ladoTriangulo2" name="ladoTriangulo2" value="5">
+        </div>
 
-      <label for="alturaTriangulo">
-        Altura
-      </label>
-      <input type="number" id="alturaTriangulo" name="alturaTriangulo" value="5" min="1">
+        <div>
+          <label for="baseTriangulo">
+            Base
+          </label>
+          <input type="number" id="baseTriangulo" name="baseTriangulo" value="5" min="1">
+        </div>
+
+        <div>
+          <label for="alturaTriangulo">
+            Altura
+          </label>
+          <input type="number" id="alturaTriangulo" name="alturaTriangulo" value="5" min="1">
+        </div>
+      </div>
 
       <div class="buttons">
         <button type="button" onclick="calcularPerimetroTriangulo()">
