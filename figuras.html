@@ -101,6 +101,36 @@
       <p id="resultadoCirculo" class="resultado">Selecciona un calculo para ver el resultado</p>
     </form>
   </section>
+
+  <section id="trianguloIsosceles">
+    <h2 tabindex="0">Triángulo isósceles</h2>
+    <form>
+      <p tabindex="0">Escribe cuánto mide cada lado y la base de tu triángulo isósceles para poder calcular la altura</p>
+
+      <div class="divideInputs">
+        <div>
+          <label for="ladoTrianguloIsosceles">
+            Lado
+          </label>
+          <input type="number" id="ladoTrianguloIsosceles" name="ladoTrianguloIsosceles" value="5">
+        </div>
+
+        <div>
+          <label for="baseTrianguloIsosceles">
+            Base
+          </label>
+          <input type="number" id="baseTrianguloIsosceles" name="baseTrianguloIsosceles" value="5" min="1">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button type="button" onclick="calcularAlturaTrianguloIsosceles()">
+          Calcular altura
+        </button>
+      </div>
+      <p id="resultadoTrianguloIsosceles" class="resultado">Comprueba la altura</p>
+    </form>
+  </section>
 </main>
 
 <footer>

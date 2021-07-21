@@ -59,7 +59,7 @@ p, label, input {
 
 label {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
@@ -77,6 +77,11 @@ input:focus {
   background-color: var(--principal);
 }
 
+input::selection {
+  color: var(--fondo);
+  background-color: var(--resaltar);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -91,6 +96,11 @@ input[type=number] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
+}
+
+#trianguloIsosceles .divideInputs div,
+#trianguloIsosceles button {
+  grid-column: 1 / 3;
 }
 
 .buttons {
@@ -131,13 +141,13 @@ footer {
   #triangulo {
     order: 1;
   }
+  #trianguloIsosceles {
+    order: 2;
+  }
 }
 
 @media (min-width: 1024px) {
   main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  #triangulo {
-    order: 0;
+    padding: 30px 300px;
   }
 }

@@ -28,6 +28,27 @@ function areaCirculo(radio) {
   return PI * (radio * radio);
 }
 
+// Código del triangulo isosceles
+function alturaTrianguloIsosceles(lado, base) {
+  if (lado != base) {
+    const mediaBase = base / 2;
+    const mediaBaseCuadrado = mediaBase * mediaBase;
+    const ladoCuadrado = lado * lado;
+    let operacion;
+
+    if (ladoCuadrado > mediaBaseCuadrado) {
+      operacion = (ladoCuadrado - mediaBaseCuadrado);
+    } else {
+      operacion = (mediaBaseCuadrado - ladoCuadrado);
+    }
+
+    const altura = Math.sqrt(operacion).toFixed(2);
+    return 'La altura del triángulo isósceles es de ' + altura + 'cm';
+  } else {
+    return 'No es un triángulo isósceles';
+  }
+}
+
 
 // Interactuando con el HTML
 function calcularPerimetroCuadrado() {
@@ -72,4 +93,11 @@ function calcularAreaCirculo() {
   const areaFixed = area.toFixed(2);
   const mensaje = 'El área del círculo es de ' + areaFixed + 'cm²';
   document.getElementById('resultadoCirculo').innerHTML = mensaje;
+}
+
+function calcularAlturaTrianguloIsosceles() {
+  const lado = document.getElementById('ladoTrianguloIsosceles').value;
+  const base = document.getElementById('baseTrianguloIsosceles').value;
+  const mensaje = alturaTrianguloIsosceles(lado, base);
+  document.getElementById('resultadoTrianguloIsosceles').innerHTML = mensaje;
 }
