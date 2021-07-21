@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Serif&display=swap');
 
 :root {
-  --principal: #F2DBD8;
+  --principal: #FF94CC;
+  --secundario: #7C83FD;
   --fondo: #FFFFFF;
   --resaltar: #59569D;
   --baseOscuro: #433A3F;
 }
 
 ::selection {
-  background-color: var(--principal)
+  color: var(--fondo);
+  background-color: var(--resaltar);
 }
 
 * {
@@ -20,7 +22,7 @@
 }
 
 body {
-  background-color: #EEEEEE;
+  background-image: linear-gradient(var(--principal), var(--secundario));
 }
 
 h1, h2 {
@@ -38,7 +40,7 @@ header h1 {
 
 main {
   padding: 40px;
-  min-height: calc(100vh - 170px);
+  min-height: calc(100vh - 168px);
 }
 
 h2 {
@@ -51,8 +53,14 @@ p, label, input {
 
 section {
   padding: 30px;
-  background-color: var(--fondo);
+  /* background-color: var(--fondo); */
   border-radius: 20px;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8.5px );
+  -webkit-backdrop-filter: blur( 8.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 label {
@@ -64,15 +72,14 @@ label {
 input {
   display: block;
   width: 100%;
-  padding: 5px 10px;
-  border: 3px solid var(--principal);
+  padding: 10px 15px;
+  border: 2px solid var(--fondo);
   border-radius: 10px;
   outline: none;
 }
 
 input:focus {
   border-color: var(--resaltar);
-  background-color: var(--principal);
 }
 
 input::selection {
@@ -95,26 +102,31 @@ input[type=number] {
 }
 
 button {
-  padding: 10px;
+  padding: 12px 10px;
   border-radius: 10px;
   width: 100%;
   border: none;
   cursor: pointer;
+  color: var(--fondo);
+  background-color: var(--secundario);
 }
 
 button:hover {
-  background-color: var(--principal);
+  background-color: var(--resaltar);
 }
 
 .resultado {
   margin-top: 15px;
-  background-color: var(--principal);
+  background-color: var(--fondo);
   padding: 10px 15px;
   border-radius: 10px;
 }
 
 footer {
   text-align: center;
-  background-color: var(--fondo);
   padding: 15px;
+}
+
+footer p { 
+  color: var(--fondo);
 }
