@@ -1,60 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Serif&display=swap');
-
-:root {
-  --principal: #F2DBD8;
-  --fondo: #FFFFFF;
-  --resaltar: #59569D;
-  --baseOscuro: #433A3F;
-}
-
-::selection {
-  background-color: var(--principal)
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'IBM Plex Serif', serif;
-  color: var(--baseOscuro);
-}
-
-body {
-  background-color: #EEEEEE;
-}
-
-h1, h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-header {
-  text-align: center;
-}
-
-header h1 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
 main {
   display: grid;
   grid-gap: 25px;
-  padding: 40px;
-  min-height: calc(100vh - 170px);
 }
 
 section {
   padding: 30px;
   background-color: var(--fondo);
   border-radius: 20px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-p, label, input {
-  margin-bottom: 5px;
 }
 
 label {
@@ -126,12 +78,6 @@ button:hover {
   background-color: var(--principal);
   padding: 10px 15px;
   border-radius: 10px;
-}
-
-footer {
-  text-align: center;
-  background-color: var(--fondo);
-  padding: 15px;
 }
 
 @media (min-width: 768px) {
