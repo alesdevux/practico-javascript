@@ -49,6 +49,70 @@ p, label, input {
   margin-bottom: 5px;
 }
 
+section {
+  padding: 30px;
+  background-color: var(--fondo);
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 3px solid var(--principal);
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--resaltar);
+  background-color: var(--principal);
+}
+
+input::selection {
+  color: var(--fondo);
+  background-color: var(--resaltar);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--principal);
+}
+
+.resultado {
+  margin-top: 15px;
+  background-color: var(--principal);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
 footer {
   text-align: center;
   background-color: var(--fondo);
